@@ -411,6 +411,8 @@ footer {
     margin: 50px;
     font-size: 20px;
     justify-items: center;
+    /* change  */
+    background-color: pink;
 }
 
 footer .values-pnc,
