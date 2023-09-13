@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #e5e9e8;
+}
+
+/* Nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    background: linear-gradient(rgb(223, 137, 39), rgb(212, 152, 82), rgb(192, 145, 90));
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar .logo {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+.navbar .logo img {
+    width: 70px;
+}
+
+.navbar .logo h4 {
+    margin-top: 7px;
+    line-height: 25px;
+}
+
+.navbar .list ul {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.navbar .list ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.navbar .list ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 20px;
+
+}
+
+.navbar .list ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+#header {
+    background-image: url(../images/other/head.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+
+#header .title {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+    text-align: center;
+    padding: 30px;
+    backdrop-filter: blur(1.5px);
+    height: 700px;
+
+}
+
+#header .title h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 20%;
+    color: white;
+
+}
+
+#header .title p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 10px;
+    color: black;
+
+}
+
+/* Valuse */
+
+#pnc-values,
+#pnc-conteen,
+#pnc-sports {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.title {
+    font-size: 15px;
+    color: rgb(10, 10, 82);
+    text-align: center;
+}
+
+.main-group-values {
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.group-values {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+    background-color: rgb(65, 156, 141);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+
+.bg-image img {
+    width: 110px;
+    border-radius: 100px;
+    margin: 10px;
+    border: 2px solid teal;
+}
+
+.bg-describe .discribe h3 {
+    font-size: 20px;
+    color: rgb(8, 41, 41);
+}
+
+.bg-describe .discribe p {
+    font-family: serif;
+}
+
+.group-values .discribe {
+    line-height: 30px;
+    background-color: gainsboro;
+    border-radius: 0 0 30px 30px;
+    padding: 20px;
+
+}
+
+/* PNC Canteen */
+#pnc-conteen .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+#pnc-conteen .sidebar .sidebar-left {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#pnc-conteen .sidebar .sidebar-left .group-foods {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    background: white;
+
+}
+
+#pnc-conteen .sidebar .sidebar-left .group-foods .discribe {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+#pnc-conteen .sidebar .sidebar-left .group-foods .discribe h2 {
+    font-size: 17px;
+    font-family: 'Moul', cursive;
+    color: rgb(8, 89, 114);
+}
+
+#pnc-conteen .sidebar .sidebar-left .group-foods .discribe p {
+    font-size: 15px;
+}
+
+#pnc-conteen .sidebar .sidebar-left .group-foods .image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 40px 40px 0 0;
+}
+
+form table {
+    width: 1000px;
+    font-size: 15px;
+    margin: auto;
+}
+
+th {
+    text-align: center;
+    color: white;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 15px;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(236, 217, 217);
+}
+
+th {
+    background: linear-gradient(rgb(26, 180, 134), rgb(78, 170, 165), rgba(77, 179, 165, 0.798));
+}
+
+/* PNC sports */
+
+.group-sports {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+#pnc-sports .group-sports .sport-name img {
+    width: 300px;
+
+}
+
+#pnc-sports .group-sports .sport-name {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    width: 300px;
+
+}
+
+#pnc-sports .group-sports .sport-name .titles {
+    padding: 20px;
+}
+
+#pnc-sports .group-sports .sport-name p {
+    font-size: 15px;
+    line-height: 30px;
+    font-family: serif;
+}
+
+.sport-name h3 {
+    margin-top: 15px;
+
+}
+
+/* Aerobic */
+
+#pnc-aerobic .group-image img {
+    width: 400px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+#pnc-aerobic .group-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+
+
+}
+
+/* Contact */
+
+#contact {
+    margin-top: 20px;
+    background-image: url(../images/other/contact.jpg);
+    background-position: right;
+    background-size: cover;
+    height: 700px;
+
+}
+
+.sun-cover {
+    backdrop-filter: blur(2px);
+    height: 700px;
+    display: flex;
+
+}
+
+#contact .sidebar-left {
+    height: 70%;
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+    border-top: 7px solid teal;
+    border-bottom: 7px solid teal;
+    margin: 60px;
+    margin-top: 150px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}
+
+#contact .sidebar-left .name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#contact .sidebar-left .name .your-name,
+.your-email,
+.subject,
+.text-area,
+.register {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#contact .sidebar-left .name .your-name input,
+.your-email input,
+.subject input,
+.register input {
+    padding: 10px;
+}
+
+#contact .sidebar-left .register input {
+    width: 50%;
+    font-size: 15px;
+    background-color: teal;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    margin-top: 30px;
+
+}
+
+#contact .sidebar-left .register {
+    display: flex;
+    align-items: center;
+}
+
+#contact .sun-cover .sidebar-right {
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+#contact .sun-cover .sidebar-right h2 {
+    font-size: 30px;
+}
+
+input:hover {
+    background-color: rgb(226, 220, 220);
+}
+
+/* Map */
+.map-pnc {
+    margin-top: 30px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 400px;
+}
+
+.gmap_iframe {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px;
+    font-size: 20px;
+    justify-items: center;
+}
+
+footer .values-pnc,
+footer .Our-Marjor,
+footer .socail-media-pnc,
+footer .Apartement {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .values-pnc .group-list img,
+.Our-Marjor .group-list-job img {
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 60px;
+}
+
+footer .values-pnc .group-list,
+.Our-Marjor .group-list-job {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 20px;
+}
+
+footer .values-pnc .group-list h4,
+.Our-Marjor .group-list-job h4 {
+    margin-top: 10px;
+}
+
+footer .socail-media-pnc .group-list img {
+    width: 40px;
+
+}
+
+footer .socail-media-pnc .group-list,
+footer .Apartement .list-apart .group-list {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    padding: 10px;
+}
+
+footer .socail-media-pnc .group-list a {
+    margin-top: 12px;
+}
+
+.socail-media-pnc-more {
+    display: none;
+}
+
+footer .socail-media-pnc .group-list:nth-child(3),
+.Our-Marjor .group-list-job:nth-child(3),
+footer .values-pnc .group-list:nth-child(5) {
+    display: flex;
+    gap: 30px;
+}
+
+footer .Apartement .list-apart {
+    font-size: 15px;
+}
+
+footer .Apartement .list-apart .group-list i {
+
+    font-size: 30px;
+    color: teal;
+}
+
+h5 {
+    margin-top: 15px;
+}
+
+
+/* Part Responsive */
+
+@media (min-width:0) and (max-width:720px) {
+
+    /* navbar */
+    .navbar {
+        justify-content: space-around;
+        height: 60px;
+        gap: 10px;
+
+    }
+
+    .navbar .logo img {
+        width: 50px;
+        margin-left: 5px;
+    }
+
+    .navbar .logo {
+        margin-left: 10px;
+    }
+
+    .navbar .logo h4 {
+        display: none;
+    }
+
+    .navbar .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .navbar .list ul {
+        gap: 0.1px;
+    }
+
+    .navbar .list ul li a {
+        font-size: 9px;
+    }
+
+    /* header */
+    #header {
+        width: auto;
+        height: 300px;
+        background-position: top;
+    }
+
+    .dark-cover {
+        height: 300px;
+        backdrop-filter: blur(0.8px);
+
+    }
+
+    .dark-cover .title {
+        height: 30%;
+
+    }
+
+    #header .dark-cover .title h1 {
+        font-size: 17px;
+        color: black;
+    }
+
+    #header .dark-cover .title p {
+        font-size: 13px;
+        color: white;
+    }
+
+    /* pnc-values */
+
+    .title {
+        font-size: 13px;
+    }
+
+    .main-group-values {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .group-values {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bg-describe .discribe {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 30px 30px 0;
+        height: 200px;
+    }
+
+    .bg-image {
+        flex: 1;
+    }
+
+    .bg-image img {
+        width: 100px;
+    }
+
+    .group-values {
+        width: 110%;
+        height: 200px;
+    }
+
+    /* pnc-canteen */
+
+    #pnc-conteen .sidebar-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #pnc-conteen .sidebar .sidebar-left .group-foods {
+        border-radius: 10px;
+    }
+
+    #pnc-conteen .sidebar .sidebar-left .group-foods .image img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    form table {
+        width: 330px;
+        font-size: 15px;
+    }
+
+    table,
+    th,
+    td {
+        padding: 7px;
+    }
+
+    /* pnc-sports */
+    .group-sports {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+
+    }
+
+    #pnc-sports .group-sports .sport-name img {
+        width: 160px;
+    }
+
+    #pnc-sports .group-sports .sport-name {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        width: 160px;
+    }
+
+    #pnc-sports .group-sports .sport-name .titles {
+        padding: 10px;
+    }
+
+    #pnc-sports .group-sports .sport-name p {
+        font-size: 15px;
+        line-height: 20px;
+        font-family: serif;
+    }
+
+    .sport-name h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+
+    }
+
+    /* Aerobic */
+    #pnc-aerobic .group-image img {
+        width: 350px;
+        height: 200px;
+    }
+
+    /* coontact us */
+
+    #contact {
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+
+    .sun-cover {
+        height: 300px;
+    }
+
+    #contact .sidebar-left {
+        display: none;
+    }
+
+    #contact .sidebar-right h2 {
+        margin-left: 10px;
+        color: black;
+        height: 300px;
+    }
+
+    #contact .sidebar-right p {
+        display: none;
+    }
+
+    /* map */
+    .mapouter {
+        width: 100px;
+        height: 200px;
+    }
+
+    .gmap_canvas {
+        width: 360px;
+        height: 200px;
+    }
+
+    .gmap_iframe {
+        width: 500px !important;
+        height: 200px !important;
+    }
+
+    /* footer */
+    footer {
+        margin: 0px;
+    }
+
+    footer .values-pnc,
+    footer .Our-Marjor,
+    footer .Apartement {
+        display: none;
+    }
+
+    footer .socail-media-pnc {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        margin-bottom: 50px;
+    }
+
+    footer .socail-media-pnc .sub-title h3,
+    .group-list a {
+        display: none;
+    }
+
+
+}
+
+@media (min-width:720px) and (max-width:834px) {
+
+    /* header */
+
+    #header,
+    #header .title {
+        height: 500px;
+    }
+
+    /* pnc-values */
+
+    .main-group-values {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-evenly;
+
+
+    }
+
+    .group-values {
+        width: 30%;
+
+    }
+
+    /* pnc-canteen */
+
+    #pnc-conteen .sidebar .sidebar-left {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    #pnc-conteen .sidebar .sidebar-left .group-foods {
+        height: 360px;
+        width: 48%;
+
+    }
+
+    form table {
+        width: 700px;
+    }
+
+    /* pnc-sports */
+
+    .group-sports {
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    #pnc-sports .group-sports .sport-name img {
+        width: 350px;
+
+    }
+
+    #pnc-sports .group-sports .sport-name {
+        width: 350px;
+
+    }
+
+    #pnc-sports .group-sports .sport-name h3 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #pnc-sports .group-sports .sport-name p {
+        font-size: 20px;
+    }
+
+
+    /* pnc-aerobic */
+    #pnc-aerobic {
+        padding: 15px;
+    }
+
+    #pnc-aerobic .group-image img {
+        width: 350px;
+    }
+
+    /* coontact us */
+    #contact {
+        height: 400px;
+    }
+
+    .sun-cover {
+        height: 270px;
+    }
+
+    #contact .sidebar-left {
+        display: none;
+    }
+
+    #contact .sun-cover .sidebar-right {
+        margin-top: 300px;
+    }
+
+    /* map */
+    .map-pnc {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    /* footer */
+    footer {
+        gap: 20px;
+    }
+
+    footer .values-pnc .group-list img,
+    .Our-Marjor .group-list-job img {
+        width: 35px;
+    }
+}
