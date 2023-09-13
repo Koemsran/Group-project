@@ -65,7 +65,7 @@ body {
 /* Header */
 #header {
     background-image: url(../images/other/head.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     height: 700px;
 }
@@ -81,18 +81,18 @@ body {
 }
 
 #header .title h1 {
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;
     margin-top: 20%;
-    color: white;
+    color: rgb(27, 58, 230);
 
 }
 
 #header .title p {
-    font-size: 20px;
+    font-size:30px;
     line-height: 1.5;
     margin-top: 10px;
-    color: black;
+    color: white;
 
 }
 
