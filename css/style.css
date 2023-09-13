@@ -65,7 +65,7 @@ body {
 /* Header */
 #header {
     background-image: url(../images/other/head.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     height: 700px;
 }
@@ -81,18 +81,18 @@ body {
 }
 
 #header .title h1 {
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
     margin-top: 20%;
-    color: rgb(27, 58, 230);
+    color: white;
 
 }
 
 #header .title p {
-    font-size:30px;
+    font-size: 20px;
     line-height: 1.5;
     margin-top: 10px;
-    color: white;
+    color: black;
 
 }
 
@@ -411,8 +411,6 @@ footer {
     margin: 50px;
     font-size: 20px;
     justify-items: center;
-    /* change  */
-    background-color: pink;
 }
 
 footer .values-pnc,
