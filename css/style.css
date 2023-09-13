@@ -411,6 +411,11 @@ footer {
     margin: 50px;
     font-size: 20px;
     justify-items: center;
+<<<<<<< HEAD
+=======
+    /* change  */
+    /* background-color: pink; */
+>>>>>>> 2b06e51b77c1bbf4bfbb1ec56149e06090e62b99
 }
 
 footer .values-pnc,
